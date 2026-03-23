@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 
 random.seed(42)
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data", "raw")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # ── helpers ──────────────────────────────────────────────────────────────────
