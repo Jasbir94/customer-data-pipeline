@@ -1,0 +1,21 @@
+product_id,product_name,category,unit_price
+P001,Laptop Pro,Electronics,1299.99
+P002,Wireless Mouse,Electronics,29.99
+P003,USB-C Hub,Electronics,49.99
+P004,Desk Chair,Furniture,349.99
+P005,Standing Desk,Furniture,499.99
+P006,Monitor 27in,Electronics,399.99
+P007,Keyboard Mech,Electronics,89.99
+P008,Webcam HD,Electronics,79.99
+P009,Notebook Set,Stationery,12.99
+P010,Pen Pack,Stationery,5.99
+P011,Headphones Pro,Electronics,249.99
+P012,Phone Stand,Accessories,19.99
+P013,Cable Pack,Accessories,14.99
+P014,Backpack,Accessories,89.99
+P015,Water Bottle,Lifestyle,24.99
+P016,Whiteboard,Stationery,59.99
+P017,Router WiFi 6,Electronics,129.99
+P018,Smart Bulb,Smart Home,15.99
+P019,Power Strip,Accessories,34.99
+P020,Plant Pot,Lifestyle,9.99

@@ -1,0 +1,96 @@
+customer_id,name,email,region,signup_date
+C0013,Yara Johnson,yara.johnson@hotmail.com,South,2021-11-10
+C0059,Tina Martin,tina.martin@yahoo.com,  South ,2024-01-28
+C0076,Carol Wilson,carol.wilson@company.org, North,2022-05-15
+C0022,Wendy Johnson,,West,2021-05-19
+C0030,Xander Taylor,xander.taylor@company.org,North,2023-09-05
+C0019,Carol Thompson,carol.thompson@company.org,East,2021-09-20
+C0065,Zoe Thomas,zoe.thomas@company.org,East,2023-08-16
+C0021,Henry Williams,henry.williamsyahoo.com,,2021-02-13
+C0035,Henry Anderson,henry.anderson@company.org,Central,2021-11-20
+C0054,Paul Garcia,paul.garcia@company.org,South,2022-08-05
+C0048,David Lewis,david.lewis@outlook.com,  South ,2022-12-09
+C0077,Karen Garcia,karen.garcia@outlook.com, North,2022-03-11
+C0080,Victor Young,victor.young@outlook.com,,2023-08-28
+C0018,Zoe Moore,zoe.moore@company.org,West,2021-04-29
+C0053,Jack Miller,jack.miller@outlook.com,  South ,2024-04-02
+C0031,Quinn Williams,quinn.williams@yahoo.com,East,2021-05-21
+C0042,Bob Anderson,bob.anderson@gmail.com,West,2024-10-28
+C0016,Iris Martin,iris.martin@outlook.com,East,2024-01-15
+C0079,Henry Harris,henry.harris@gmail.com, North,2023-07-07
+C0003,Wendy Thompson,wendy.thompsonoutlook.com,  South ,2022-03-28
+C0030,Xander Taylor,xander.taylor@company.org,North,2021-04-13
+C0058,David White,david.white@company.org,East,2023-08-10
+C0026,Noah Garcia,noah.garcia@gmail.com,Central,2023-08-06
+C0008,Leo Anderson,leo.anderson@gmail.com,West,2024-10-04
+C0025,Victor Brown,victor.brown@gmail.com,North,2024-03-19
+C0039,Alice Taylor,alice.taylor@yahoo.com,East,2023-01-29
+C0072,Wendy Davis,wendy.davis@company.org,South,2024-11-28
+C0047,Mia Thompson,mia.thompson@outlook.com,,26-Feb-2021
+C0023,Henry Wilson,henry.wilson@company.org, North,2022-03-15
+C0056,Carol White,carol.white@hotmail.com,  South ,2024-07-13
+C0043,Tina Jones,tina.jonesyahoo.com,West,2021-11-29
+C0001,Uma Brown,uma.brown@yahoo.com,North,2022-07-18
+C0046,Henry Smith,henry.smith@gmail.com,West,2023-03-28
+C0005,David Anderson,david.anderson@gmail.com,,2024-05-21
+C0012,Rachel Wilson,rachel.wilson@yahoo.com,  South ,2024-04-10
+C0064,Noah Thompson,noah.thompson@hotmail.com,West,2023-09-27
+C0066,Victor Smith,victor.smith@hotmail.com,South,2024-08-09
+C0017,Leo Garcia,leo.garcia@gmail.com,North,2024-07-15
+C0038,Uma Wilson,uma.wilson@gmail.com, North,2024-04-10
+C0041,Leo Young,leo.young@outlook.com,East,31-May-2023
+C0062,Eva Miller,eva.miller@company.org,South,2024-07-20
+C0070,Yara Anderson,yara.anderson@gmail.com,East,2024-05-25
+C0045,Bob Harris,bob.harris@hotmail.com,West,2022-02-13
+C0004,Zoe Garcia,zoe.garcia@yahoo.com,  South ,2022-11-28
+C0059,Tina Martin,tina.martin@yahoo.com,  South ,2024-07-08
+C0025,Victor Brown,victor.brown@gmail.com,North,2024-10-08
+C0055,Victor Moore,victor.moore@gmail.com,West,12-Feb-2022
+C0028,Mia Johnson,mia.johnson@hotmail.com,East,16-Feb-2023
+C0047,Mia Thompson,mia.thompson@outlook.com,,2024-01-03
+C0068,Rachel Johnson,rachel.johnson@gmail.com,,2022-04-05
+C0073,Bob Anderson,bob.andersoncompany.org,  South ,2024-09-16
+C0029,Noah Thompson,noah.thompson@yahoo.com, North,2021-11-14
+C0025,Victor Brown,victor.brown@gmail.com,North,2023-04-05
+C0034,Alice White,alice.white@company.org,South,2021-05-31
+C0050,Xander Miller,xander.miller@outlook.com,,03-Jun-2023
+C0075,Uma Wilson,uma.wilson@company.org, North,2023-08-11
+C0040,Alice Brown,,South,2024-11-16
+C0051,Jack Martin,jack.martin@hotmail.com,Central,2024-09-27
+C0060,Henry Wilson,, North,2024-07-07
+C0067,Olivia Taylor,olivia.taylor@hotmail,,2023-02-16
+C0027,Bob Thompson,bob.thompson@yahoo.com,North,2021-07-11
+C0049,Sam Miller,sam.miller@gmail.com,Central,2021-04-01
+C0036,Uma Martin,uma.martin@outlook.com,North,2024-09-29
+C0016,Iris Martin,iris.martin@outlook.com,East,2023-11-06
+C0032,Sam Lewis,sam.lewis@company.org,North,22-Jun-2024
+C0011,Karen Miller,karen.miller@hotmail.com, North,2023-03-22
+C0039,Alice Taylor,alice.taylor@yahoo.com,East,2024-07-28
+C0069,Alice Lewis,alice.lewis@gmail.com,East,04-May-2022
+C0020,Grace Thompson,grace.thompson@outlook.com,West,2024-12-31
+C0078,Iris Thompson,iris.thompson@gmail.com,North,2023-11-25
+C0010,Bob Davis,bob.davis@gmail.com,North,2022-10-09
+C0076,Carol Wilson,carol.wilson@company.org, North,2025-12-10
+C0052,Victor Thomas,victor.thomashotmail.com,East,2024-06-14
+C0009,Frank White,frank.white@company.org,  South ,2022-07-07
+C0015,Yara Wilson,yara.wilson@yahoo.com,,2021-08-17
+C0077,Karen Garcia,karen.garcia@outlook.com, North,2024-08-02
+C0033,Victor Taylor,victor.taylor@outlook.com,West,2022-06-28
+C0038,Uma Wilson,uma.wilson@gmail.com, North,2025-12-29
+C0024,Noah Miller,noah.miller@outlook.com,South,2021-07-18
+C0044,Xander Taylor,xander.taylor@yahoo.com,  South ,2024-10-03
+C0057,Alice Brown,alice.brown@company.org,  South ,2022-03-25
+C0062,Eva Miller,eva.miller@company.org,South,2023-04-30
+C0061,Jack Davis,jack.davis@company.org,Central,2022-11-19
+C0037,Iris Brown,iris.brown@outlook.com,South,2024-02-08
+C0074,Noah Harris,noah.harris@hotmail.com,South,2023-06-07
+C0002,Carol Young,carol.young@yahoo.com,  South ,07-Mar-2021
+C0014,Olivia Martin,olivia.martin@gmail.com,Central,2024-02-08
+C0063,Mia Young,mia.young@gmail.com,North,2024-03-25
+C0040,Alice Brown,,South,2024-05-29
+C0017,Leo Garcia,leo.garcia@gmail.com,North,2024-05-11
+C0013,Yara Johnson,yara.johnson@hotmail.com,South,2024-02-02
+C0038,Uma Wilson,uma.wilson@gmail.com, North,2022-05-30
+C0071,Sam Smith,sam.smith@hotmail.com,Central,2024-03-25
+C0007,Henry Moore,henry.moore@hotmail.com,South,2022-04-22
+C0006,Mia Williams,mia.williams@outlook.com,Central,2024-07-11

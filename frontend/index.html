@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Pipeline Dashboard</title>
+  <meta name="description" content="Interactive analytics dashboard for customer, order, and product pipeline data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="nav-icon">⚡</span>
+      <span class="nav-title">DataPipeline <span class="accent">360</span></span>
+    </div>
+    <div class="nav-tabs">
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="revenue">Revenue</button>
+      <button class="tab-btn" data-tab="customers">Customers</button>
+      <button class="tab-btn" data-tab="categories">Categories</button>
+      <button class="tab-btn" data-tab="regions">Regions</button>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <!-- GLOBAL LOADING & ERROR STATES -->
+    <div id="global-loading" class="state-container">
+      <div class="spinner"></div>
+      <p>Loading your dashboard...</p>
+    </div>
+    
+    <div id="global-error" class="state-container hidden">
+      <div class="error-icon">⚠️</div>
+      <p id="error-message">Failed to load data. Please ensure the backend is running.</p>
+      <button class="retry-btn" onclick="location.reload()">Retry API Connection</button>
+    </div>
+
+    <!-- MAIN DASHBOARD CONTENT (Hidden until loaded) -->
+    <div id="dashboard-content" class="hidden">
+      <!-- HERO STATS -->
+      <section class="hero-stats" id="overview">
+        <div class="stat-card" id="stat-orders">
+          <div class="stat-icon">📦</div>
+          <div class="stat-body">
+            <div class="stat-label">Total Orders</div>
+            <div class="stat-value" id="val-orders">—</div>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-customers">
+          <div class="stat-icon">👥</div>
+          <div class="stat-body">
+            <div class="stat-label">Total Customers</div>
+            <div class="stat-value" id="val-customers">—</div>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-revenue">
+          <div class="stat-icon">💰</div>
+          <div class="stat-body">
+            <div class="stat-label">Total Revenue</div>
+            <div class="stat-value" id="val-revenue">—</div>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-months">
+          <div class="stat-icon">📅</div>
+          <div class="stat-body">
+            <div class="stat-label">Active Months</div>
+            <div class="stat-value" id="val-months">—</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVENUE TAB -->
+      <section class="tab-content" id="tab-revenue">
+        <div class="section-header with-controls">
+          <div>
+            <h2>Monthly Revenue Trend</h2>
+            <p>Completed orders only — grouped by year-month</p>
+          </div>
+          <div class="controls">
+            <input type="month" id="revenue-start" class="date-input" placeholder="Start Month" />
+            <span class="to-label">to</span>
+            <input type="month" id="revenue-end" class="date-input" placeholder="End Month" />
+            <button id="filter-revenue-btn" class="action-btn">Filter</button>
+          </div>
+        </div>
+        <div class="chart-card wide">
+          <canvas id="revenueChart"></canvas>
+        </div>
+      </section>
+
+      <!-- CUSTOMERS TAB -->
+      <section class="tab-content hidden" id="tab-customers">
+        <div class="section-header with-controls">
+          <div>
+            <h2>Top 10 Customers by Spend</h2>
+            <p>Completed orders — includes churn indicator</p>
+          </div>
+          <div class="controls">
+            <input type="text" id="customer-search" class="search-input" placeholder="Search by name or region..." />
+          </div>
+        </div>
+        <div class="table-card">
+          <table id="customersTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Region</th>
+                <th>Total Spend</th>
+                <th>Churned</th>
+              </tr>
+            </thead>
+            <tbody id="customersBody"></tbody>
+          </table>
+          <div id="customers-empty" class="empty-state hidden">No customers found matching your search.</div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES TAB -->
+      <section class="tab-content hidden" id="tab-categories">
+        <div class="section-header">
+          <h2>Category Performance</h2>
+          <p>Revenue, average order value, and order count per product category</p>
+        </div>
+        <div class="charts-row">
+          <div class="chart-card">
+            <h3>Revenue by Category</h3>
+            <canvas id="categoryRevenueChart"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Orders by Category</h3>
+            <canvas id="categoryOrdersChart"></canvas>
+          </div>
+        </div>
+        <div class="table-card mt">
+          <table id="categoryTable">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Total Revenue</th>
+                <th>Avg Order Value</th>
+                <th>Num Orders</th>
+              </tr>
+            </thead>
+            <tbody id="categoryBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- REGIONS TAB -->
+      <section class="tab-content hidden" id="tab-regions">
+        <div class="section-header">
+          <h2>Regional Analysis</h2>
+          <p>Customers, orders, and revenue broken down by region</p>
+        </div>
+        <div class="region-grid" id="regionGrid"></div>
+        <div class="chart-card wide mt">
+          <h3>Revenue by Region</h3>
+          <canvas id="regionChart"></canvas>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <span>DataPipeline 360 &mdash; Powered by Python • FastAPI • Chart.js</span>
+  </footer>
+
+  <script src="chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

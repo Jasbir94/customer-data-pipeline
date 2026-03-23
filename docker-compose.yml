@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Bind-mount the processed CSVs directory to the container so it can read the latest analysis
+      - ./data/processed:/app/data/processed:ro
+    environment:
+      - PYTHONUNBUFFERED=1
