@@ -3,7 +3,7 @@
  * Handles fetching API, chart rendering, searching, filtering, and state management.
  */
 
-const API = "http://localhost:8000";
+const API = "";
 
 // ── State ────────────────────────────────────────────────────────────────────
 let rawRevenueData = [];
